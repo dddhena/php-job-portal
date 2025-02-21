@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit DDAA - Blogs</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        h1, h2 {
+            margin: 0;
+            padding: 10px 0;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        /* Blog Section */
+        .blog-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .blog-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(33.333% - 20px);
+            max-width: calc(33.333% - 20px);
+            overflow: hidden;
+        }
+
+        .blog-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .blog-card-content {
+            padding: 15px;
+        }
+
+        .blog-card-content h3 {
+            margin: 0 0 10px;
+            color: #4CAF50;
+        }
+
+        .blog-card-content p {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .read-more {
+            display: inline-block;
+            margin-top: 10px;
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .read-more:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #4CAF50;
+            color: white;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .blog-card {
+                flex: 1 1 calc(50% - 20px);
+                max-width: calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .blog-card {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dire Dawa Development Association</h1>
+        <h2>Our Latest Blogs</h2>
+    </header>
+
+    <div class="container">
+        <section class="blog-section">
+            <div class="blog-card">
+                <img src="blog1.jpg" alt="Community Development">
+                <div class="blog-card-content">
+                    <h3>Empowering the Community</h3>
+                    <p>Learn how DDAA is fostering growth and empowerment through education and resources.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <img src="blog2.jpg" alt="Healthcare Initiatives">
+                <div class="blog-card-content">
+                    <h3>Improving Healthcare Access</h3>
+                    <p>Explore our initiatives to make healthcare accessible and affordable in Dire Dawa.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <img src="blog3.jpg" alt="Youth Programs">
+                <div class="blog-card-content">
+                    <h3>Youth Programs and Opportunities</h3>
+                    <p>Discover how we are supporting the next generation with skills and opportunities.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Dire Dawa Development Association. All rights reserved.</p>
+    </footer>
+</body>
+</html>

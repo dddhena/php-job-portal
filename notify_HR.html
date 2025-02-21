@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notify HR</title>
+    <link rel="stylesheet" href="styles/notify_HR.css">
+</head>
+<body>
+    <header>
+        <h1>Notify HR</h1>
+    </header>
+    <main>
+        <form action="notify_hr.php" method="POST">
+            <label for="application_id">Application ID:</label>
+            <input type="text" id="application_id" name="application_id" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Notify HR</button>
+        </form>
+    </main>
+    <script src="scripts/notify_HR.js"></script>
+</body>
+</html>

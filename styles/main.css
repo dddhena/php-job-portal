@@ -1,0 +1,130 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #867af0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.top-bar {
+    background-color: #003366;
+    color: #1289eb;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+header {
+    background-color: #477e8e;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #003366;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #53515f;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.actions {
+    margin-bottom: 20px;
+}
+
+.actions button {
+    background-color: #003366;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.actions button:hover {
+    background-color: #00509e;
+}
+
+.search-bar {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.search-bar h2 {
+    color: #003366;
+    margin: 0 0 20px;
+}
+
+.search-bar form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.search-bar input, .search-bar select, .search-bar button {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.search-bar button {
+    background-color: #d32f2f;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #b71c1c;
+}
+
+.login-register {
+    margin-top: 20px;
+}
+
+.login-register a {
+    color: #003366;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.login-register a:hover {
+    text-decoration: underline;
+}
+ nav ul li {
+    background-color: #d4dbe2;
+}
+ nav ul li:hover{
+    background-color: #15dceb;
+    cursor: pointer;
+}

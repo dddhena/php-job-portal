@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assign Roles</title>
+    <link rel="stylesheet" href="styles/assign_role.css">
+</head>
+<body>
+    <header>
+        <h1>Assign Roles</h1>
+    </header>
+    <main>
+        <form action="database/assign_role.php" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="role">Role:</label>
+            <select id="role" name="role" required>
+                <option value="admin">Admin</option>
+                <option value="hiring_manager">Hiring Manager</option>
+                <option value="hr_staff">HR Staff</option>
+            </select>
+
+            <button type="submit">Assign Role</button>
+        </form>
+    </main>
+    <script src="scripts/assign_role.js"></script>
+</body>
+</html>

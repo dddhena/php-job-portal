@@ -1,0 +1,14 @@
+body{
+    text-align: center;
+    background-color: rgb(189, 195, 208);
+}
+
+.title{
+    background-color: rgb(51, 153, 73);
+    padding: 20px;
+    margin-top: 0px;
+}
+  h2{
+    color: blueviolet red;
+
+}

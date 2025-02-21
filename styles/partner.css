@@ -1,0 +1,244 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0d7fac;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #2C3E50; /* Dark Blue */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    color: #E74C3C; /* Red color on hover */
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #2C3E50; 
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    margin-top: 50px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Main Content Styles */
+main {
+    padding: 40px;
+    background-color: #798ae1;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3, h4 {
+    color: #34495E; /* Soft Blue */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.partner-list {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.partner-logos img {
+    width: 150px;
+    margin: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.partner-logos img:hover {
+    transform: scale(1.1);
+}
+
+.partnership-types ul {
+    margin-top: 15px;
+    list-style-type: disc;
+    margin-left: 30px;
+    font-size: 1.1rem;
+}
+
+.partnership-types li {
+    margin-bottom: 10px;
+    padding: 5px 0;
+}
+
+.collaboration-details,
+.success-stories,
+.become-a-partner,
+.testimonials,
+.impact-reports {
+    margin-bottom: 40px;
+}
+
+.collaboration-example,
+.success-item {
+    background-color: #ecf0f1; /* Light Grey */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input, form textarea {
+    padding: 15px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #3498db; /* Blue focus color */
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.5);
+}
+
+form button {
+    padding: 15px;
+    background-color: #160b61; /* Red Button */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #C0392B; /* Darker Red on Hover */
+}
+
+.testimonial blockquote {
+    font-style: italic;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #0bd0de;
+    border-left: 4px solid #0c19d7e1;
+    padding-left: 20px;
+}
+
+.testimonial p {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.impact-reports ul {
+    list-style-type: none;
+    margin-top: 15px;
+}
+
+.impact-reports ul li {
+    margin-top: 10px;
+}
+
+.impact-reports a {
+    text-decoration: none;
+    color: #3f34db; /* Blue Links */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.impact-reports a:hover {
+    color: #2997b9; /* Darker Blue on Hover */
+}
+
+/* Marquee Upwards Effect */
+.marquee {
+    position: relative;
+    overflow: hidden;
+    height: 50px;
+    margin-top: 30px;
+}
+
+.marquee-content {
+    position: absolute;
+    width: 100%;
+    animation: scrollUp 10s linear infinite;
+}
+
+@keyframes scrollUp {
+    0% {
+        top: 100%;
+    }
+    100% {
+        top: -100%;
+    }
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header nav ul li {
+        margin-right: 10px;
+    }
+
+    .partner-logos img {
+        width: 120px;
+        margin: 10px;
+    }
+
+    form {
+        gap: 10px;
+    }
+
+    form button {
+        padding: 12px;
+        font-size: 1rem;
+    }
+
+    .testimonial blockquote {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate to DDDA</title>
+    <link rel="stylesheet" href="styles/donation.css">
+    <script>
+        function updatePaymentOptions() {
+            const paymentMethod = document.getElementById("payment-method").value;
+            const bankDetails = document.getElementById("bank-details");
+            
+            if (paymentMethod === "bank-transfer") {
+                bankDetails.style.display = "block";
+            } else {
+                bankDetails.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header class="donate-header">
+        <h1>Support Our Mission</h1>
+        <p>Your donation helps us make a real difference in the lives of those in need. Join us in creating a better future.</p>
+    </header>
+
+    <main>
+        <section class="donation-form-section">
+            <h2>Make a Donation</h2>
+            <form action="process_donation.php" method="POST" class="donation-form">
+                <label for="donation-amount">Choose an amount:</label>
+                <div class="donation-amounts">
+                    <label><input type="radio" name="amount" value="10"> 10birr</label>
+                    <label><input type="radio" name="amount" value="50"> 50birr</label>
+                    <label><input type="radio" name="amount" value="100"> 100birr</label>
+                    <label><input type="radio" name="amount" value="custom"> Custom</label>
+                    <input type="number" name="custom-amount" placeholder="Enter custom amount" min="1">
+                </div>
+
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="payment-method">Payment Method:</label>
+                <select id="payment-method" name="payment-method" onchange="updatePaymentOptions()">
+                    <option value="credit-card">Credit/Debit Card</option>
+                    <option value="bank-transfer">Bank Transfer</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="mobile-payment">Mobile Payment</option>
+                </select>
+
+                <div id="bank-details" style="display: none; margin-top: 1rem;">
+                    <h3>Bank Transfer Details</h3>
+                    <p><strong>CBE (Commercial Bank of Ethiopia):</strong> 100001234567</p>
+                    <p><strong>CBO (Cooperative Bank of Oromia):</strong> 200001234567</p>
+                    <p><strong>Awash Bank:</strong> 300001234567</p>
+                </div>
+
+                <label for="message">Message/Notes (Optional):</label>
+                <textarea id="message" name="message" rows="4" placeholder="Add a personal note..."></textarea>
+
+                <label><input type="checkbox" name="recurring"> Make this a monthly donation</label>
+
+                <button type="submit" class="donate-btn">Donate Now</button>
+            </form>
+        </section>
+
+        <section class="donation-impact">
+            <h2>Where Your Donation Goes</h2>
+            <p>Every dollar you contribute helps us fund critical projects, including education, healthcare, and community development. Together, we can achieve so much more.</p>
+            <div class="impact-stories">
+                <div class="story">
+                    <h3>Education</h3>
+                    <p>Your support provides scholarships and supplies to students in need.</p>
+                </div>
+                <div class="story">
+                    <h3>Healthcare</h3>
+                    <p>We deliver essential medical services to underserved communities.</p>
+                </div>
+                <div class="story">
+                    <h3>Community Development</h3>
+                    <p>We build infrastructure and create opportunities for sustainable growth.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="progress-tracker">
+            <h2>Our Progress</h2>
+            <div class="progress-bar">
+                <div class="progress" style="width: 65%;">65,000 birr raised of 100,000 goal</div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="donate-footer">
+        <p>Thank you for your generosity! <a href="contact.html">Contact us</a> if you have any questions.</p>
+    </footer>
+</body>
+</html>

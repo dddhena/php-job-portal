@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Job</title>
+    <link rel="stylesheet" href="styles/update_job.css">
+</head>
+<body>
+    <header>
+        <h1>Update Job</h1>
+    </header>
+    <main>
+        <form action="backend/update_job.php" method="POST">
+            <label for="job_id">Job ID:</label>
+            <input type="text" id="job_id" name="job_id" required>
+
+            <label for="title">Job Title:</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+
+            <label for="salary">Salary:</label>
+            <input type="text" id="salary" name="salary" required>
+
+            <label for="employer">Employer:</label>
+            <input type="text" id="employer" name="employer" required>
+
+            <label for="qualification">Qualification:</label>
+            <input type="text" id="qualification" name="qualification" required>
+
+            <button type="submit">Update Job</button>
+        </form>
+    </main>
+    <script src="scripts/update_job.js"></script>
+</body>
+</html>

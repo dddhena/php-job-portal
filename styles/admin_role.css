@@ -1,0 +1,53 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(to right, #2E7D32, #4CAF50);
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+/* Main Section Styles */
+main {
+    text-align: center;
+    padding: 20px;
+}
+
+main ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+main ul li {
+    margin: 15px 0;
+}
+
+main ul li a {
+    display: block;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+main ul li a:hover {
+    background-color: #2E7D32;
+}

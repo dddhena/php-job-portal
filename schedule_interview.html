@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule Interview</title>
+    <link rel="stylesheet" href="styles/schedule_interview.css">
+</head>
+<body>
+    <header>
+        <h1>Schedule Interview</h1>
+    </header>
+    <main>
+        <form action="schedule_interview.php" method="POST">
+            <label for="candidate_name">Candidate Name:</label>
+            <input type="text" id="candidate_name" name="candidate_name" required>
+
+            <label for="job_id">Job ID:</label>
+            <input type="text" id="job_id" name="job_id" required>
+
+            <label for="date">Interview Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Interview Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <button type="submit">Schedule Interview</button>
+        </form>
+    </main>
+    <script src="scripts/schedule_interview.js"></script>
+</body>
+</html>

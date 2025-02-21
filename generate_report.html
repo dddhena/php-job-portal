@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Report</title>
+    <link rel="stylesheet" href="styles/generate_report.css">
+</head>
+<body>
+    <header>
+        <h1>Generate Report</h1>
+    </header>
+    <main>
+        <form action="backend/generate_report.php" method="POST">
+            <label for="report_type">Report Type:</label>
+            <select id="report_type" name="report_type" required>
+                <option value="user_activity">User Activity</option>
+                <option value="system_performance">System Performance</option>
+                <option value="financial_report">Financial Report</option>
+            </select>
+
+            <button type="submit">Generate Report</button>
+        </form>
+    </main>
+    <script src="scripts/generate_report.js"></script>
+</body>
+</html>
